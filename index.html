@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html
+  data-wf-page="65bbefdefd61b201768e6b46"
+  data-wf-site="65bbefdefd61b201768e6af3"
+  data-wf-status="1"
+>
+  <head>
+    <meta charset="utf-8" />
+    <title>Autocap</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Webflow" name="generator" />
+    <link href="css/webflow-style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link
+      href="https://fonts.gstatic.com"
+      rel="preconnect"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: [
+            "Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic",
+          ],
+        },
+      });
+    </script>
+    <script type="text/javascript">
+      !(function (o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        (n.className += t + "js"),
+          ("ontouchstart" in o ||
+            (o.DocumentTouch && c instanceof DocumentTouch)) &&
+            (n.className += t + "touch");
+      })(window, document);
+    </script>
+    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="images/app-icon.png" rel="apple-touch-icon" />
+  </head>
+  <body class="body">
+    <div class="page-wrapper">
+      <div
+        data-collapse="medium"
+        data-animation="default"
+        data-duration="400"
+        data-easing="ease"
+        data-easing2="ease"
+        role="banner"
+        class="section_nav-2rows w-nav"
+      >
+        <div class="padding-global">
+          <div class="nav-2rows_container">
+            <a
+              href="https://www.flowspark.co/"
+              target="_blank"
+              class="nav-logo-link w-nav-brand"
+              ><img
+                src="images/logo-text-20-1-.png"
+                loading="lazy"
+                width="150"
+                alt=""
+            /></a>
+            <nav role="navigation" class="nav-menu w-nav-menu">
+              <div class="nav-2cols-wrapper">
+                <a href="#perks" class="nav-link">Perks</a
+                ><a href="#price" class="nav-link">Prices</a
+                ><a href="#faq" class="nav-link">Faq</a>
+              </div>
+              <div class="nav-right-wrapper">
+                <a
+                  href="https://discord.gg/fcS3PRV5Ku"
+                  target="_blank"
+                  class="button w-button"
+                  >Discord</a
+                >
+              </div>
+            </nav>
+            <div class="nav-menu-button w-nav-button">
+              <div class="nav_menu-icon w-embed">
+                <svg
+                  width="1.25rem"
+                  height="1rem"
+                  viewBox="0 0 20 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19 7H1C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9H19C19.5523 9 20 8.55228 20 8C20 7.44772 19.5523 7 19 7Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M19 0H7C6.44772 0 6 0.447715 6 1C6 1.55228 6.44772 2 7 2H19C19.5523 2 20 1.55228 20 1C20 0.447715 19.5523 0 19 0Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M19 14H11C10.4477 14 10 14.4477 10 15C10 15.5523 10.4477 16 11 16H19C19.5523 16 20 15.5523 20 15C20 14.4477 19.5523 14 19 14Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="global-styles w-embed">
+        <style>
+          /* Make text look crisper and more legible in all browsers */
+          body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+          }
+
+          /* Focus state style for keyboard navigation for the focusable elements */
+          *[tabindex]:focus-visible,
+          input[type="file"]:focus-visible {
+            outline: 0.125rem solid #4d65ff;
+            outline-offset: 0.125rem;
+          }
+
+          /* Get rid of top margin on first element in any rich text element */
+          .w-richtext > :not(div):first-child,
+          .w-richtext > div:first-child > :first-child {
+            margin-top: 0 !important;
+          }
+
+          /* Get rid of bottom margin on last element in any rich text element */
+          .w-richtext > :last-child,
+          .w-richtext ol li:last-child,
+          .w-richtext ul li:last-child {
+            margin-bottom: 0 !important;
+          }
+
+          /* Prevent all click and hover interaction with an element */
+          .pointer-events-off {
+            pointer-events: none;
+          }
+
+          /* Enables all click and hover interaction with an element */
+          .pointer-events-on {
+            pointer-events: auto;
+          }
+
+          /* Create a class of .div-square which maintains a 1:1 dimension of a div */
+          .div-square::after {
+            content: "";
+            display: block;
+            padding-bottom: 100%;
+          }
+
+          /* Make sure containers never lose their center alignment */
+          .container-medium,
+          .container-small,
+          .container-large {
+            margin-right: auto !important;
+            margin-left: auto !important;
+          }
+
+          /* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+          /*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+
+          /* Apply "..." after 3 lines of text */
+          .text-style-3lines {
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+          }
+
+          /* Apply "..." after 2 lines of text */
+          .text-style-2lines {
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+
+          /* Adds inline flex display */
+          .display-inlineflex {
+            display: inline-flex;
+          }
+
+          /* These classes are never overwritten */
+          .hide {
+            display: none !important;
+          }
+
+          @media screen and (max-width: 991px) {
+            .hide,
+            .hide-tablet {
+              display: none !important;
+            }
+          }
+          @media screen and (max-width: 767px) {
+            .hide-mobile-landscape {
+              display: none !important;
+            }
+          }
+          @media screen and (max-width: 479px) {
+            .hide-mobile {
+              display: none !important;
+            }
+          }
+
+          .margin-0 {
+            margin: 0rem !important;
+          }
+
+          .padding-0 {
+            padding: 0rem !important;
+          }
+
+          .spacing-clean {
+            padding: 0rem !important;
+            margin: 0rem !important;
+          }
+
+          .margin-top {
+            margin-right: 0rem !important;
+            margin-bottom: 0rem !important;
+            margin-left: 0rem !important;
+          }
+
+          .padding-top {
+            padding-right: 0rem !important;
+            padding-bottom: 0rem !important;
+            padding-left: 0rem !important;
+          }
+
+          .margin-right {
+            margin-top: 0rem !important;
+            margin-bottom: 0rem !important;
+            margin-left: 0rem !important;
+          }
+
+          .padding-right {
+            padding-top: 0rem !important;
+            padding-bottom: 0rem !important;
+            padding-left: 0rem !important;
+          }
+
+          .margin-bottom {
+            margin-top: 0rem !important;
+            margin-right: 0rem !important;
+            margin-left: 0rem !important;
+          }
+
+          .padding-bottom {
+            padding-top: 0rem !important;
+            padding-right: 0rem !important;
+            padding-left: 0rem !important;
+          }
+
+          .margin-left {
+            margin-top: 0rem !important;
+            margin-right: 0rem !important;
+            margin-bottom: 0rem !important;
+          }
+
+          .padding-left {
+            padding-top: 0rem !important;
+            padding-right: 0rem !important;
+            padding-bottom: 0rem !important;
+          }
+
+          .margin-horizontal {
+            margin-top: 0rem !important;
+            margin-bottom: 0rem !important;
+          }
+
+          .padding-horizontal {
+            padding-top: 0rem !important;
+            padding-bottom: 0rem !important;
+          }
+
+          .margin-vertical {
+            margin-right: 0rem !important;
+            margin-left: 0rem !important;
+          }
+
+          .padding-vertical {
+            padding-right: 0rem !important;
+            padding-left: 0rem !important;
+          }
+        </style>
+      </div>
+      <main class="main-wrapper">
+        <header
+          data-w-id="741a13a2-b6f9-753d-1dbe-e6ea93a9bf8e"
+          style="
+            -webkit-transform: translate3d(0, 40px, 0) scale3d(1, 1, 1)
+              rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+            -moz-transform: translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0)
+              rotateY(0) rotateZ(0) skew(0, 0);
+            -ms-transform: translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0)
+              rotateY(0) rotateZ(0) skew(0, 0);
+            transform: translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0)
+              rotateY(0) rotateZ(0) skew(0, 0);
+            opacity: 0;
+          "
+          class="section_hero-large-image"
+        >
+          <div class="padding-global">
+            <div class="padding-section-large">
+              <div class="container-small">
+                <div class="text-align-center">
+                  <h1 class="heading">
+                    Solve ArkoseLabs&#x27; Challenge with
+                    <span class="text-background"
+                      ><strong class="bold-text">AutoCap</strong></span
+                    >.
+                  </h1>
+                  <div class="padding-bottom padding-small"></div>
+                  <div class="hero-paragraph-padding center">
+                    <p class="text-size-medium text-custom-gray">
+                      With AutoCap you can expect incredibly low solve times
+                      which range from 1 - 4 seconds.
+                    </p>
+                  </div>
+                  <div class="padding-bottom padding-medium"></div>
+                  <div class="button-wrap center">
+                    <a
+                      href="https://discord.gg/fcS3PRV5Ku"
+                      target="_blank"
+                      class="button is-large w-button"
+                      >Get Started</a
+                    >
+                    <div class="padding-left padding-medium"></div>
+                    <a
+                      href="#price"
+                      class="arrow-link-block outline w-inline-block"
+                      ><p class="text-color-black">Prices</p>
+                      <svg
+                        class="svg-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12ZM14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12Z"
+                          fill="currentColor"
+                        ></path>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M12 3C17.5915 3 22.2898 6.82432 23.6219 12C22.2898 17.1757 17.5915 21 12 21C6.40848 21 1.71018 17.1757 0.378052 12C1.71018 6.82432 6.40848 3 12 3ZM12 19C7.52443 19 3.73132 16.0581 2.45723 12C3.73132 7.94186 7.52443 5 12 5C16.4756 5 20.2687 7.94186 21.5428 12C20.2687 16.0581 16.4756 19 12 19Z"
+                          fill="currentColor"
+                        ></path></svg
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="padding-bottom padding-xxlarge"></div>
+              <div class="image-container-large">
+                <pre
+                  class="code-block w-code-block"
+                  style="
+                    display: block;
+                    overflow-x: auto;
+                    background: #2b2b2b;
+                    color: #f8f8f2;
+                    padding: 0.5em;
+                  "
+                ><code class="language-python" style="white-space:pre"><span class="comment linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:2.25em;padding-right:1em;text-align:right;user-select:none">1</span><span style="color:#dcc6e0">import</span><span> requests
+</span><span class="comment linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:2.25em;padding-right:1em;text-align:right;user-select:none">2</span>
+<span class="comment linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:2.25em;padding-right:1em;text-align:right;user-select:none">3</span>reqToSolve = requests.post(
+<span class="comment linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:2.25em;padding-right:1em;text-align:right;user-select:none">4</span><span>    </span><span style="color:#abe338">&quot;http://paid3.daki.cc:4000/solve&quot;</span><span>,
+</span><span class="comment linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:2.25em;padding-right:1em;text-align:right;user-select:none">5</span>    json={
+<span class="comment linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:2.25em;padding-right:1em;text-align:right;user-select:none">6</span><span>        </span><span style="color:#abe338">&quot;api_key&quot;</span><span>: </span><span style="color:#abe338">&quot;Your AutoCap API key here&quot;</span><span>,
+</span><span class="comment linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:2.25em;padding-right:1em;text-align:right;user-select:none">7</span><span>        </span><span style="color:#abe338">&quot;surl&quot;</span><span>: </span><span style="color:#abe338">&quot;https://roblox-api.arkoselabs.com&quot;</span><span>,
+</span><span class="comment linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:2.25em;padding-right:1em;text-align:right;user-select:none">8</span><span>        </span><span style="color:#abe338">&quot;href&quot;</span><span>: </span><span style="color:#abe338">&quot;https://www.roblox.com/arkose/iframe&quot;</span><span>,
+</span><span class="comment linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:2.25em;padding-right:1em;text-align:right;user-select:none">9</span><span>        </span><span style="color:#abe338">&quot;pkey&quot;</span><span>: </span><span style="color:#abe338">&quot;476068BF-9607-4799-B53D-966BE98E2B81&quot;</span><span>,
+</span><span class="comment linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:2.25em;padding-right:1em;text-align:right;user-select:none">10</span><span>        </span><span style="color:#abe338">&quot;site&quot;</span><span>: </span><span style="color:#abe338">&quot;https://www.roblox.com/&quot;</span><span>,
+</span><span class="comment linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:2.25em;padding-right:1em;text-align:right;user-select:none">11</span><span>        </span><span style="color:#abe338">&quot;windowStructure&quot;</span><span>: </span><span style="color:#abe338">&quot;[[],[[]]]&quot;</span><span>,
+</span><span class="comment linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:2.25em;padding-right:1em;text-align:right;user-select:none">12</span><span>        </span><span style="color:#abe338">&quot;windowTreeIndex&quot;</span><span>: </span><span style="color:#abe338">&quot;[1,0]&quot;</span><span>,
+</span><span class="comment linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:2.25em;padding-right:1em;text-align:right;user-select:none">13</span><span>        </span><span style="color:#abe338">&quot;ancestorOriginList&quot;</span><span>: </span><span style="color:#abe338">&#x27;[&quot;https://www.roblox.com&quot;, &quot;https://www.roblox.com&quot;]&#x27;</span><span>,
+</span><span class="comment linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:2.25em;padding-right:1em;text-align:right;user-select:none">14</span><span>        </span><span style="color:#abe338">&quot;proxy&quot;</span><span>: </span><span style="color:#abe338">&quot;user:pass@host:port&quot;</span><span>,
+</span><span class="comment linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:2.25em;padding-right:1em;text-align:right;user-select:none">15</span><span>        </span><span style="color:#abe338">&quot;extraData&quot;</span><span>: {</span><span style="color:#abe338">&quot;blob&quot;</span><span>: </span><span style="color:#abe338">&quot;Blob value here if neccessary&quot;</span><span>},
+</span><span class="comment linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:2.25em;padding-right:1em;text-align:right;user-select:none">16</span><span>        </span><span style="color:#abe338">&quot;capiMode&quot;</span><span>: </span><span style="color:#abe338">&quot;inline&quot;</span><span>,
+</span><span class="comment linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:2.25em;padding-right:1em;text-align:right;user-select:none">17</span><span>        </span><span style="color:#abe338">&quot;jsfEnabled&quot;</span><span>: </span><span style="color:#f5ab35">False</span><span>,
+</span><span class="comment linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:2.25em;padding-right:1em;text-align:right;user-select:none">18</span><span>        </span><span style="color:#abe338">&quot;style&quot;</span><span>: </span><span style="color:#abe338">&quot;default&quot;</span><span>,
+</span><span class="comment linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:2.25em;padding-right:1em;text-align:right;user-select:none">19</span>    },
+<span class="comment linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:2.25em;padding-right:1em;text-align:right;user-select:none">20</span><span>    timeout=</span><span style="color:#f5ab35">120</span><span>,
+</span><span class="comment linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:2.25em;padding-right:1em;text-align:right;user-select:none">21</span>)</code></pre>
+                <div class="shadow-div"></div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="images/download-svg.png"
+            loading="lazy"
+            alt=""
+            class="hero-large-image_pattern2"
+          /><img
+            src="images/5578992-ai-20-1-.svg"
+            loading="lazy"
+            alt=""
+            class="hero-large-image_pattern1"
+          />
+        </header>
+        <div
+          data-w-id="1d83303e-c066-68de-6097-b667da4e199a"
+          style="
+            -webkit-transform: translate3d(0, 40px, 0) scale3d(1, 1, 1)
+              rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+            -moz-transform: translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0)
+              rotateY(0) rotateZ(0) skew(0, 0);
+            -ms-transform: translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0)
+              rotateY(0) rotateZ(0) skew(0, 0);
+            transform: translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0)
+              rotateY(0) rotateZ(0) skew(0, 0);
+            opacity: 0;
+          "
+          class="section_logo-standard"
+        >
+          <div class="padding-global">
+            <div class="container-large">
+              <div class="padding-section-medium">
+                <h1 class="heading-2">
+                  <span class="text-span">Works</span> With...
+                </h1>
+                <div class="logo-cloud_component">
+                  <div
+                    id="w-node-_1d83303e-c066-68de-6097-b667da4e199e-768e6b46"
+                    class="logo-div center"
+                  >
+                    <img
+                      src="images/roblox-logo.png"
+                      loading="lazy"
+                      id="w-node-ad646979-1426-19bf-f793-8489c325c647-768e6b46"
+                      sizes="(max-width: 479px) 100vw, (max-width: 767px) 22vw, (max-width: 991px) 14vw, 15vw"
+                      alt=""
+                      srcset="
+                        images/roblox-logo-p-500.png   500w,
+                        images/roblox-logo-p-800.png   800w,
+                        images/roblox-logo-p-1080.png 1080w,
+                        images/roblox-logo-p-1600.png 1600w,
+                        images/roblox-logo-p-2000.png 2000w,
+                        images/roblox-logo-p-2600.png 2600w,
+                        images/roblox-logo-p-3200.png 3200w,
+                        images/roblox-logo.png        3840w
+                      "
+                    />
+                  </div>
+                  <div
+                    id="w-node-_1d83303e-c066-68de-6097-b667da4e19a0-768e6b46"
+                    class="logo-div center"
+                  >
+                    <img
+                      src="images/pngimg.com-20-20github_png15.png"
+                      loading="lazy"
+                      sizes="(max-width: 479px) 100vw, (max-width: 767px) 22vw, (max-width: 991px) 14vw, 15vw"
+                      srcset="
+                        images/pngimg.com-20-20github_png15-p-500.png   500w,
+                        images/pngimg.com-20-20github_png15-p-800.png   800w,
+                        images/pngimg.com-20-20github_png15-p-1080.png 1080w,
+                        images/pngimg.com-20-20github_png15.png        1150w
+                      "
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    id="w-node-_1d83303e-c066-68de-6097-b667da4e19a2-768e6b46"
+                    class="logo-div center"
+                  >
+                    <img
+                      src="images/minecraft_logo_icon_248454-20-1-.png"
+                      loading="lazy"
+                      width="200"
+                      alt=""
+                      class="image"
+                    />
+                  </div>
+                  <div
+                    id="w-node-_1d83303e-c066-68de-6097-b667da4e19a4-768e6b46"
+                    class="logo-div center"
+                  >
+                    <img
+                      src="images/1000px-ea_sports_monochrome_logo.svg.png"
+                      loading="lazy"
+                      width="120"
+                      id="w-node-_947ec37e-abf7-6a28-dfa2-982ac14a3b4e-768e6b46"
+                      alt=""
+                      srcset="
+                        images/1000px-ea_sports_monochrome_logo.svg-p-500.png  500w,
+                        images/1000px-ea_sports_monochrome_logo.svg.png       1000w
+                      "
+                      sizes="(max-width: 479px) 100vw, (max-width: 767px) 18vw, (max-width: 991px) 12vw, 120px"
+                    />
+                  </div>
+                  <div
+                    id="w-node-_1d83303e-c066-68de-6097-b667da4e19a6-768e6b46"
+                    class="logo-div center"
+                  >
+                    <img
+                      src="images/linkedin-logo-white-png-wordmark-icon-horizontal-20-1-.png"
+                      loading="lazy"
+                      sizes="(max-width: 479px) 100vw, (max-width: 767px) 22vw, (max-width: 991px) 14vw, 15vw"
+                      srcset="
+                        images/linkedin-logo-white-png-wordmark-icon-horizontal-20-1-p-500.png  500w,
+                        images/linkedin-logo-white-png-wordmark-icon-horizontal-20-1-p-800.png  800w,
+                        images/linkedin-logo-white-png-wordmark-icon-horizontal-20-1-.png      1400w
+                      "
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section_features-hero">
+          <div class="padding-global">
+            <div class="container-large">
+              <div class="padding-section-large">
+                <div
+                  data-w-id="730953ff-0b01-92a3-5a99-5256c4e721aa"
+                  style="
+                    -webkit-transform: translate3d(0, 40px, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                    -moz-transform: translate3d(0, 40px, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                    -ms-transform: translate3d(0, 40px, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                    transform: translate3d(0, 40px, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                    opacity: 0;
+                  "
+                  class="_2x1-grid-layout"
+                >
+                  <div
+                    id="w-node-_730953ff-0b01-92a3-5a99-5256c4e721ab-768e6b46"
+                    class="image-div"
+                  >
+                    <img
+                      src="images/vecteezy_robot-chatbot-icon-sign_4996790.png"
+                      loading="lazy"
+                      sizes="(max-width: 479px) 100vw, (max-width: 767px) 85vw, (max-width: 991px) 89vw, 46vw"
+                      srcset="
+                        images/vecteezy_robot-chatbot-icon-sign_4996790-p-500.png   500w,
+                        images/vecteezy_robot-chatbot-icon-sign_4996790-p-800.png   800w,
+                        images/vecteezy_robot-chatbot-icon-sign_4996790-p-1080.png 1080w,
+                        images/vecteezy_robot-chatbot-icon-sign_4996790-p-1600.png 1600w,
+                        images/vecteezy_robot-chatbot-icon-sign_4996790.png        1920w
+                      "
+                      alt=""
+                      class="place-holder-image rotate-right"
+                    />
+                  </div>
+                  <div
+                    id="w-node-_730953ff-0b01-92a3-5a99-5256c4e721ae-768e6b46"
+                    class="content-div"
+                  >
+                    <h2 class="heading-5">
+                      Understand
+                      <span class="paragraph-short-background"> solvers </span
+                      ><span class="paragraph-long-background"
+                        >performance</span
+                      >
+                      better
+                    </h2>
+                    <div class="padding-bottom padding-small"></div>
+                    <div class="h2-paragraph-padding">
+                      <p class="text-custom-gray">eeeeeeeeeeeeeee</p>
+                    </div>
+                    <div class="padding-bottom padding-large"></div>
+                    <a
+                      href="https://discord.gg/fcS3PRV5Ku"
+                      class="button w-button"
+                      >Get Started</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="images/download-svg.png"
+            loading="lazy"
+            alt=""
+            class="features-hero_pattern1"
+          />
+        </div>
+        <section>
+          <div class="w-layout-blockcontainer container w-container">
+            <h1 class="heading-8">Showcase</h1>
+            <div
+              style="padding-top: 56.17021276595745%"
+              class="w-embed-youtubevideo youtube"
+            >
+              <iframe
+                src="https://www.youtube.com/embed/AKu7jWGnSiU?rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0"
+                frameborder="0"
+                style="
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  width: 100%;
+                  height: 100%;
+                  pointer-events: auto;
+                "
+                allow="autoplay; encrypted-media"
+                allowfullscreen=""
+                title="AutoCap - New Best FunCaptcha Solver?!"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+        <section class="section_how-it-works-steps-icon">
+          <div class="padding-section-medium">
+            <div class="padding-global">
+              <div
+                data-w-id="fd742ada-17a5-e5d0-8b3f-ef2fcbda1bca"
+                style="
+                  -webkit-transform: translate3d(0, 40px, 0) scale3d(1, 1, 1)
+                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                  -moz-transform: translate3d(0, 40px, 0) scale3d(1, 1, 1)
+                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                  -ms-transform: translate3d(0, 40px, 0) scale3d(1, 1, 1)
+                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                  transform: translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0)
+                    rotateY(0) rotateZ(0) skew(0, 0);
+                  opacity: 0;
+                "
+                class="container-large"
+              >
+                <div class="container-small">
+                  <div class="text-align-center">
+                    <p class="text-custom-primary is-caps">3 easy steps</p>
+                    <h2 class="heading-3">
+                      How it
+                      <span class="paragraph-short-background">works</span>
+                    </h2>
+                    <div class="text-subheader-padding">
+                      <p class="text-custom-gray">
+                        EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+                      </p>
+                    </div>
+                    <div class="padding-bottom padding-xlarge"></div>
+                  </div>
+                </div>
+                <div class="w-layout-grid icon-line_1x3-grid">
+                  <div class="how-it-works-steps-icon_item">
+                    <div
+                      id="w-node-fd742ada-17a5-e5d0-8b3f-ef2fcbda1bd9-768e6b46"
+                      class="number-icon-semi-round"
+                    >
+                      <p class="text-size-medium text-weight-bold">1</p>
+                    </div>
+                    <div
+                      id="w-node-fd742ada-17a5-e5d0-8b3f-ef2fcbda1bdc-768e6b46"
+                      class="padding-bottom padding-medium"
+                    ></div>
+                    <div class="text-size-medium text-weight-semibold">
+                      Find Component
+                    </div>
+                    <div class="padding-bottom padding-xsmall"></div>
+                    <div class="text-custom-gray text-size-small">
+                      AAAAAAAAAAAAAAAAAAAAA
+                    </div>
+                  </div>
+                  <div class="how-it-works-steps-icon_item">
+                    <div
+                      id="w-node-fd742ada-17a5-e5d0-8b3f-ef2fcbda1be4-768e6b46"
+                      class="number-icon-semi-round"
+                    >
+                      <p class="text-size-medium text-weight-bold">2</p>
+                    </div>
+                    <div class="padding-bottom padding-medium"></div>
+                    <div class="text-size-medium text-weight-semibold">
+                      Copy and Paste
+                    </div>
+                    <div class="padding-bottom padding-xsmall"></div>
+                    <div class="text-custom-gray text-size-small">
+                      AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                    </div>
+                  </div>
+                  <div class="how-it-works-steps-icon_item">
+                    <div
+                      id="w-node-fd742ada-17a5-e5d0-8b3f-ef2fcbda1bef-768e6b46"
+                      class="number-icon-semi-round"
+                    >
+                      <p class="text-size-medium text-weight-bold">3</p>
+                    </div>
+                    <div class="padding-bottom padding-medium"></div>
+                    <div class="text-size-medium text-weight-semibold">
+                      Done!
+                    </div>
+                    <div class="padding-bottom padding-xsmall"></div>
+                    <div class="text-custom-gray text-size-small">
+                      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="perks" class="section_features-grid">
+          <div class="padding-section-medium">
+            <div class="padding-global">
+              <div
+                data-w-id="7440b3af-17ad-1e9c-d58f-4c6cc0512e33"
+                style="
+                  -webkit-transform: translate3d(0, 40px, 0) scale3d(1, 1, 1)
+                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                  -moz-transform: translate3d(0, 40px, 0) scale3d(1, 1, 1)
+                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                  -ms-transform: translate3d(0, 40px, 0) scale3d(1, 1, 1)
+                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                  transform: translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0)
+                    rotateY(0) rotateZ(0) skew(0, 0);
+                  opacity: 0;
+                "
+                class="container-large"
+              >
+                <div class="container-small">
+                  <div class="text-align-center">
+                    <h2 class="heading-6">
+                      Perks of
+                      <span class="paragraph-long-background">AutoCap</span>
+                    </h2>
+                    <div class="text-subheader-padding">
+                      <p class="text-custom-gray">aaaaaaaaaaaaaaaaaaaaaaaa</p>
+                    </div>
+                    <div class="padding-bottom padding-xlarge"></div>
+                  </div>
+                </div>
+                <div class="w-layout-grid _1x3-grid">
+                  <div class="features-grid_item">
+                    <div
+                      id="w-node-_7440b3af-17ad-1e9c-d58f-4c6cc0512e40-768e6b46"
+                      class="features-grid_feature-icon-div"
+                    >
+                      <div class="features-grid_icon-background">
+                        <svg
+                          class="svg-icon"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="path"
+                            d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM6 8a6 6 0 1 1 12 0A6 6 0 0 1 6 8zm2 10a3 3 0 0 0-3 3 1 1 0 1 1-2 0 5 5 0 0 1 5-5h8a5 5 0 0 1 5 5 1 1 0 1 1-2 0 3 3 0 0 0-3-3H8z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="text-size-medium text-weight-semibold">
+                      Support
+                    </div>
+                    <div class="padding-bottom padding-small"></div>
+                    <div
+                      class="text-custom-gray text-size-small padding-bottom"
+                    >
+                      aaaaaaaaaaaaaaaaaaaaaaaaa
+                    </div>
+                  </div>
+                  <div class="features-grid_item">
+                    <div
+                      id="w-node-_7440b3af-17ad-1e9c-d58f-4c6cc0512e49-768e6b46"
+                      class="features-grid_feature-icon-div"
+                    >
+                      <div class="features-grid_icon-background">
+                        <svg
+                          class="svg-icon"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M4 3a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H4zm16 2v4H4V5h16zM4 11h16v8H4v-8zm6-4a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM6 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="text-size-medium text-weight-semibold">
+                      Organise
+                    </div>
+                    <div class="padding-bottom padding-small"></div>
+                    <div
+                      class="text-custom-gray text-size-small padding-bottom"
+                    >
+                      eeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+                    </div>
+                  </div>
+                  <div class="features-grid_item">
+                    <div
+                      id="w-node-_7440b3af-17ad-1e9c-d58f-4c6cc0512e52-768e6b46"
+                      class="features-grid_feature-icon-div"
+                    >
+                      <div class="features-grid_icon-background">
+                        <svg
+                          class="svg-icon"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M19 2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h14zm0 4V4H5v2h14zm0 10a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h14zm0 4v-2H5v2h14zm0-11a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h14zm0 4v-2H5v2h14z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="text-size-medium text-weight-semibold">
+                      Flexibility
+                    </div>
+                    <div class="padding-bottom padding-small"></div>
+                    <div
+                      class="text-custom-gray text-size-small padding-bottom"
+                    >
+                      aaaaaaaaaaaaaaaaaa
+                    </div>
+                  </div>
+                  <div class="features-grid_item">
+                    <div
+                      id="w-node-_7440b3af-17ad-1e9c-d58f-4c6cc0512e5b-768e6b46"
+                      class="features-grid_feature-icon-div"
+                    >
+                      <div class="features-grid_icon-background">
+                        <svg
+                          class="svg-icon"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M18.806 12.919a4 4 0 1 0-3.787-6.586 1 1 0 0 0 1.49 1.334 1.992 1.992 0 0 1 1.695-.657A2 2 0 0 1 18 11H3a1 1 0 1 0 0 2h15c.276 0 .546-.028.806-.081zM5 10h5.516a2.5 2.5 0 1 0-1.88-4.167 1 1 0 0 0 1.491 1.334A.5.5 0 1 1 10.5 8H5a1 1 0 0 0 0 2zm11.5 4H8a1 1 0 1 0 0 2h8.5a.5.5 0 1 1-.373.833 1 1 0 1 0-1.49 1.334A2.5 2.5 0 1 0 16.517 14H16.5z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="text-size-medium text-weight-semibold">
+                      Speed
+                    </div>
+                    <div class="padding-bottom padding-small"></div>
+                    <div
+                      class="text-custom-gray text-size-small padding-bottom"
+                    >
+                      aaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    </div>
+                  </div>
+                  <div class="features-grid_item">
+                    <div
+                      id="w-node-_7440b3af-17ad-1e9c-d58f-4c6cc0512e64-768e6b46"
+                      class="features-grid_feature-icon-div"
+                    >
+                      <div class="features-grid_icon-background">
+                        <svg
+                          class="svg-icon"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M12 4a1 1 0 0 1 1 1v14a1 1 0 1 1-2 0V5a1 1 0 0 1 1-1zm5 4a1 1 0 0 1 1 1v10a1 1 0 1 1-2 0V9a1 1 0 0 1 1-1zM7 12a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0v-6a1 1 0 0 1 1-1z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="text-size-medium text-weight-semibold">
+                      Quality
+                    </div>
+                    <div class="padding-bottom padding-small"></div>
+                    <div
+                      class="text-custom-gray text-size-small padding-bottom"
+                    >
+                      aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    </div>
+                  </div>
+                  <div class="features-grid_item">
+                    <div
+                      id="w-node-_7440b3af-17ad-1e9c-d58f-4c6cc0512e6d-768e6b46"
+                      class="features-grid_feature-icon-div"
+                    >
+                      <div class="features-grid_icon-background">
+                        <svg
+                          class="svg-icon"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.514 2.126a1 1 0 0 1 .972 0l9 5a1 1 0 0 1 0 1.748l-9 5a1 1 0 0 1-.972 0l-9-5a1 1 0 0 1 0-1.748l9-5zM5.06 8L12 11.856 18.94 8 12 4.144 5.06 8z"
+                            fill="currentColor"
+                          ></path>
+                          <path
+                            d="M2.126 11.514a1 1 0 0 1 1.36-.388L12 15.856l8.514-4.73a1 1 0 0 1 .972 1.748l-9 5a1 1 0 0 1-.972 0l-9-5a1 1 0 0 1-.388-1.36z"
+                            fill="currentColor"
+                          ></path>
+                          <path
+                            d="M2.126 15.514a1 1 0 0 1 1.36-.388L12 19.856l8.514-4.73a1 1 0 0 1 .972 1.748l-9 5a1 1 0 0 1-.972 0l-9-5a1 1 0 0 1-.388-1.36z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="text-size-medium text-weight-semibold">
+                      Resources
+                    </div>
+                    <div class="padding-bottom padding-small"></div>
+                    <div
+                      class="text-custom-gray text-size-small padding-bottom"
+                    >
+                      aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <header id="price" class="section_cta-text">
+          <div class="padding-global">
+            <div class="padding-section-medium">
+              <div
+                data-w-id="94b83feb-a4b4-7063-c806-0d845450b1fb"
+                style="
+                  -webkit-transform: translate3d(0, 40px, 0) scale3d(1, 1, 1)
+                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                  -moz-transform: translate3d(0, 40px, 0) scale3d(1, 1, 1)
+                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                  -ms-transform: translate3d(0, 40px, 0) scale3d(1, 1, 1)
+                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                  transform: translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0)
+                    rotateY(0) rotateZ(0) skew(0, 0);
+                  opacity: 0;
+                "
+                class="cta_container-large"
+              >
+                <div class="cta-text_container">
+                  <div class="text-align-center">
+                    <div class="content-div center">
+                      <h2>
+                        <span class="paragraph-medium-background black"
+                          >Price per solve</span
+                        >
+                      </h2>
+                      <div class="padding-bottom padding-small"></div>
+                      <div class="cta-paragraph-padding center">
+                        <p class="custom-white-gray">
+                          aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                        </p>
+                      </div>
+                    </div>
+                    <div class="padding-bottom padding-large"></div>
+                    <a
+                      href="https://samsrobloxaccountmarket.mysellix.io/product/656b6bd617269"
+                      class="button is-white w-button"
+                      >Buy Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section id="faq" class="section_faq-vertical">
+          <div class="padding-global">
+            <div class="container-medium">
+              <div
+                data-w-id="a28ff7f5-8d24-713d-bb52-10f05015665b"
+                style="
+                  -webkit-transform: translate3d(0, 40px, 0) scale3d(1, 1, 1)
+                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                  -moz-transform: translate3d(0, 40px, 0) scale3d(1, 1, 1)
+                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                  -ms-transform: translate3d(0, 40px, 0) scale3d(1, 1, 1)
+                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                  transform: translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0)
+                    rotateY(0) rotateZ(0) skew(0, 0);
+                  opacity: 0;
+                "
+                class="padding-section-medium"
+              >
+                <div class="text-align-center">
+                  <h2 class="heading-7">
+                    Frequently Asked
+                    <span class="paragraph-short-background">Questions</span>
+                  </h2>
+                  <div class="text-subheader-padding">
+                    <p class="text-custom-gray">eeeeeeeeeeeeeeeeeeeeeeee</p>
+                  </div>
+                </div>
+                <div class="padding-bottom padding-xlarge"></div>
+                <div class="faq-vertical_container">
+                  <div class="faq-vertical_item">
+                    <div class="faq_question">
+                      <div class="text-size-medium text-weight-semibold">
+                        What can you expect with our solver?
+                      </div>
+                      <div class="faq_icon-expander">
+                        <div class="faq_explander-vertical"></div>
+                        <div class="faq_explander-horizontal"></div>
+                      </div>
+                    </div>
+                    <div class="faq_answer">
+                      <div class="padding-bottom padding-small"></div>
+                      <p class="text-custom-gray">
+                        You can expect consistent quick speeds with low bot
+                        score for practically every site!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="faq-vertical_item">
+                    <div class="faq_question">
+                      <div class="text-size-medium text-weight-semibold">
+                        ????
+                      </div>
+                      <div class="faq_icon-expander">
+                        <div class="faq_explander-vertical"></div>
+                        <div class="faq_explander-horizontal"></div>
+                      </div>
+                    </div>
+                    <div class="faq_answer">
+                      <div class="padding-bottom padding-small"></div>
+                      <p class="text-custom-gray">aaaaaaaaaaaa</p>
+                    </div>
+                  </div>
+                  <div class="faq-vertical_item">
+                    <div class="faq_question">
+                      <div class="text-size-medium text-weight-semibold">
+                        ????
+                      </div>
+                      <div class="faq_icon-expander">
+                        <div class="faq_explander-vertical"></div>
+                        <div class="faq_explander-horizontal"></div>
+                      </div>
+                    </div>
+                    <div class="faq_answer">
+                      <div class="padding-bottom padding-small"></div>
+                      <p class="text-custom-gray">aaaaaaaaaaaaaaaaaaa</p>
+                    </div>
+                  </div>
+                  <div class="faq-vertical_item">
+                    <div class="faq_question">
+                      <div class="text-size-medium text-weight-semibold">
+                        ????
+                      </div>
+                      <div class="faq_icon-expander">
+                        <div class="faq_explander-vertical"></div>
+                        <div class="faq_explander-horizontal"></div>
+                      </div>
+                    </div>
+                    <div class="faq_answer">
+                      <div class="padding-bottom padding-small"></div>
+                      <p class="text-custom-gray">aaaaaaaaaaaaaaaaaa</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="padding-bottom padding-xlarge"></div>
+                <p class="text-align-center">
+                  Can’t find the answer you’re looking for? Reach out to our
+                  <a
+                    href="https://discord.gg/fcS3PRV5Ku"
+                    target="_blank"
+                    class="link"
+                    >discord support team</a
+                  >.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="section_footer-simple">
+          <div class="padding-global">
+            <div class="container-large">
+              <div class="padding-section-large">
+                <div class="footer-simple_container">
+                  <a href="#" class="footer-simple_logo-link w-inline-block"
+                    ><img
+                      src="images/logo-text-20-1-.png"
+                      loading="lazy"
+                      alt=""
+                      class="footer-simple_logo"
+                  /></a>
+                  <div class="footer-simple_nav-links">
+                    <a href="#perks" class="footer-simple_link">Perks</a
+                    ><a href="#price" class="footer-simple_link">Prices</a
+                    ><a href="#faq" class="footer-simple_link">Faq</a>
+                  </div>
+                  <div class="footer-simple_divider"></div>
+                  <p>© Copyright 2024. All rights reserved.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/webflow-script.js" type="text/javascript"></script>
+  </body>
+</html>
