@@ -17,12 +17,12 @@ A modern static website template featuring a sleek green and dark black design. 
 
 1. **Clone the Repository**
    ```bash
-   git clone [https://github.com/yourusername/static-page-template.git](https://github.com/billispro/autocap.git)
+   git clone https://github.com/billispro/autocap.git
    ```
 
 2. **Navigate to the Project Directory**
    ```bash
-   cd static-page-template
+   cd autocap
    ```
 
 3. **Open the Project in Your Browser**
