@@ -17,7 +17,7 @@ A modern static website template featuring a sleek green and dark black design. 
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/static-page-template.git
+   git clone [https://github.com/yourusername/static-page-template.git](https://github.com/billispro/autocap.git)
    ```
 
 2. **Navigate to the Project Directory**
