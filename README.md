@@ -11,7 +11,7 @@ A modern static website template featuring a sleek green and dark black design. 
 
 ## Preview
 
-![Template Screenshot](link-to-screenshot)
+![Template Screenshot](https://github.com/billispro/autocap/blob/main/example.png)
 
 ## Installation
 
